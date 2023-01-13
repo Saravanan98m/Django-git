@@ -1,0 +1,20 @@
+{% extends 'theme.html' %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    {% for a in s %}
+        <div class="col-lg-4">
+<div class="card" style="width: 12rem;">
+  <img src="{{a.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{a.name}}</h5>
+    <p class="card-text">{{a.address}}</p>
+      <p class="card-text">{{a.mobileno}}</p>
+    <a href="#" class="btn btn-primary">More Details</a>
+  </div>
+</div>
+        </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
